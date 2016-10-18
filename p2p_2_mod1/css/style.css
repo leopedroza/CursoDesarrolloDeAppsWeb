@@ -1,0 +1,24 @@
+.box {
+    overflow: hidden;
+}
+
+.content {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+.left {
+    float: left;
+    width: 40%;
+    
+
+.left .content {
+    border-right: 5px solid #4BB495  ;
+}
+
+.right {
+    float: right;
+    width: 60%;    
+}

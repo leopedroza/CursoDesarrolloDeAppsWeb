@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Date</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1 id="h1"></h1>
+    <p>Este trabajo fue realizado por José Leonardo Pedroza Pérez.</p>
+    <h2 id="h2">La fecha y la hora son:</h2>
+    <div id="fecha"></div>
+    <div id="notas"></div>
+
+    <script type="text/javascript">
+      var fecha = new Date();
+      var msj;
+
+      if (fecha.getHours() < 12) { msj = "Buenos días"; }
+      else if (fecha.getHours() < 19) { msj = "Buenas tardes"; }
+      else                            { msj = "Buenas noches"; }
+
+      document.getElementById("h1").innerHTML    = msj;
+      document.getElementById("fecha").innerHTML = fecha.toString().replace(/Ã©/g,"&eacute;").replace(/Ã/g,"&iacute;");
+    </script>
+
+    <script type="text/javascript">
+      var resultado;
+
+      var cantLocation = "";
+      for(x in location) {
+        cantLocation += '\t' + x + ' ==> ' + location[x] + '\n';
+      }
+
+      resultado = '<pre>\n<strong>a) El contenido de innerHTML de elemento identificado por id="h2" es:</strong> ' + document.getElementById("h2").innerHTML +
+                  '\n<strong>b) El contenido de outerHTML de elemento identificado por id="h1" es:</strong> ' + document.getElementById("h1").outerHTML.replace(/</g,"&lt;",/>/g,"&gt;") +
+                  '\n<strong>c) El contenido de la propiedad global location.href es:</strong> ' + location.href +
+                  '\n<strong>d) El contenido de la propiedad global location es:</strong>\n' + cantLocation +
+                  '<strong>e) El contenido de las propiedades globales screen.width y screen.heigth es:</strong> ' + screen.width + ", " + screen.heigth + "</pre>";
+
+      document.getElementById("notas").innerHTML = resultado;
+    </script>
+  </body>
+</html>

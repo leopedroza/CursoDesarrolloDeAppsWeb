@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta description="Ejercicio P2P opcional del módulo 1 correspondiente al MOOC de MiriadaX: Desarrollo en HTML5, CSS y Javascript de Apps Web, Android, IOS... (5.ª ed.)">
+		<meta author="Leonardo Pedroza">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/estilo.css">
+		<title>Módulo 1 - Tema 6: Ejercicio P2P opcional</title>
+	</head>
+	<body>
+		<nav>
+			<header>
+				<ul>
+					<li>
+						<h1>Ejercicio solucionado</h1>
+					</li>
+				</ul>
+			</header>
+		</nav>
+
+		<article>
+			<h1>Módulo 1 - Tema 6: Ejercicio P2P opcional</h1>
+			<section>
+				<h2>Explicación de la tarea</h2>
+				
+				<p>Realizar en el siguiente HTML 5 declaraciones de estilo CSS que afecten al mismo elemento, el titular h1, con diferentes puntuaciones de prioridad, e indicar su puntuación como un comentario en el propio HTML:</p>
+<pre class="prettyprint lang-html">
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;Herencia&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="caja"&gt;
+&lt;header class="cabecera"&gt;
+&lt;h1&gt;Cabecera: header&lt;/h1&gt;
+&lt;/header&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+			</section>
+			<section>
+				<h2>Solución CSS</h2>
+<pre class="prettyprint lang-html">
+/*  Estilos de línea,       ID(#),      Clases(.),      Elementos   | Representación */
+/* --------------------------------------------------------------------------------- */
+#caja h1 {color: yellow;}
+/*  0,                      1,          0,              1           |                */
+/* --------------------------------------------------------------------------------- */
+#caja header h1 {color: blue;}
+/*  0,                      1,          0,              2           |                */
+/* --------------------------------------------------------------------------------- */
+#caja .cabecera h1 {color: orange;}
+/*  0,                      1,          1,              1           |       X        */
+/* --------------------------------------------------------------------------------- */
+header h1 {color: purple;}
+/*  0,                      0,          0,              2           |                */
+/* --------------------------------------------------------------------------------- */
+h1 {color: red;}
+/*  0,                      0,          0,              1           |                */
+</pre>
+			</section>
+		</article>
+
+		<footer><p>Realizado por José Leonardo Pedroza Pérez</p></footer>
+
+		<script async src="http://assets.codepen.io/assets/embed/ei.js"></script>
+		
+		<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+		
+	</body>
+</html>

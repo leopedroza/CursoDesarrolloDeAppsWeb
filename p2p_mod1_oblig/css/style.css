@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* Hoja de estilo - style.css */
+
+/*
+PUNTUACIÓN: A, B, C, D
+	A = ESTILOS DE LINEA
+	B = NÚMERO DE IDs
+	C = NÚMERO DE CLASES
+	D = NÚMERO DE MARCAS HTML
+*/
+
+body  {
+    background-color: #0066AA;
+    font-family: Verdana;
+}
+
+h1, h2, h3 {
+	margin-top: 20px;
+}
+
+h1{
+    font-size: 24px;
+}
+
+h2{
+    font-size: 16px;
+}
+
+h3{
+    font-size: 14px;
+}
+
+li{
+	font-size: 12px;
+}
+div{
+	margin: 10px;
+	padding: 15px;
+	border: 1px solid #000000;	
+	border-radius: 10px 10px 10px 10px;
+}
+.titulo{
+	background-color: #3b5998;
+	color: lightgrey;
+}
+
+.texto{
+	color: white;
+}
+
+.ejemplo{
+	margin-left: 100px;
+	margin-right: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: #F7f7f7;
+	color: #3b5998;
+	border-radius: 0px 0px 0px 0px;
+}

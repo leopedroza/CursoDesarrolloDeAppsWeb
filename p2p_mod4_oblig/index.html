@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Buenos días, bienvenidos a la calculadora de José Leonardo Pedroza Pérez</title>
+		<meta charset="utf-8">
+		<script type="text/javascript">
+		  var num, acc = 0, op = "";
+
+		  function mas()   { acc = num.value;  op = "+"; }
+		  function menos() { acc = num.value;  op = "-"; }
+		  function multiplicar() { acc = num.value;  op = "*"; }
+		  function dividir() { acc = num.value;  op = "/"; }
+		  function elevar() { acc = num.value;  op = "^"; }
+
+		  function calcular() {
+		    if(op === "+") { num.value = (+acc + +num.value) }
+		    if(op === "-") { num.value = (+acc - +num.value) }
+		    if(op === "*") { num.value = (+acc * +num.value) }
+		    if(op === "/") { num.value = (+acc / +num.value) }
+		    if(op === "^") { num.value = (Math.pow(+acc, +num.value)) }
+		  }
+
+		  function cuadrado() {
+		  	num.value = (+num.value * +num.value);
+		  }
+
+		  function inverso() {
+		  	num.value = (1 / +num.value).toFixed(2);
+		  }
+
+		  function raiz_cuadrada() {
+		  	num.value = Math.sqrt(+num.value, 2);
+		  }
+
+		  function parte_entera() {
+		  	if(+num.value >= 0)
+		  		num.value = Math.floor(+num.value);
+		  	else
+		  		num.value = -Math.ceil(+num.value);
+		  }
+
+		  function inic()   { num = document.getElementById("num"); }
+		  function vaciar() { num.value = ""; }  
+		</script>
+	</head>
+	<body onLoad="inic()">
+		<h2>Buenos días, bienvenidos a la calculadora de José Leonardo Pedroza Pérez</h2>
+		Número:<br /><input type="text" size="12" id="num" onClick="vaciar()">
+		<p>
+			<strong>Operaciones con un operando:</strong><br />
+			<button onClick="cuadrado()">x^2</button>
+			<button onClick="inverso()">1/x</button>
+			<button onClick="raiz_cuadrada()">sqrt(x)</button>
+			<button onClick="parte_entera()">parte_entera(x)</button>
+		</p>
+		<p>
+			<strong>Operaciones con dos operandos:</strong><br />
+			<button onClick="mas()">+</button>
+			<button onClick="menos()">-</button>
+			<button onClick="multiplicar()">*</button>
+			<button onClick="dividir()">/</button>
+			<button onClick="elevar()">x^y</button>
+			<button onClick="calcular()">=</button>
+		</p>
+	</body>
+</html>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Página personal de José Leonardo Pedroza Pérez</title>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+		h1 {
+			color: purple;
+		}
+		body {
+		    width: 80%;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		.red {
+			color: red;
+		}
+		.yellow {
+			color: yellow;
+		}
+		@font-face {
+			font-family: 'Droid Sans';
+			font-weight: bold;
+		}
+		.contentheading {
+		    background-color: #D5D9C6;
+		    border-radius: 20px 20px 20px 20px;
+		    font-size: 190%;
+		    font-weight: normal;
+		    line-height: 140%;
+		    margin: 1 0 15px 0;
+		    padding: 12px 4px;
+		    text-align: center;
+		}
+		.fuentes {
+			padding-top: 20px; 
+			font-family: 'Droid Sans';
+		}
+		.bordeRedondeado {
+			margin-top: 20px;
+			border-radius: 25px;
+			border: 2px solid #73AD21;
+			padding: 20px; 
+			margin-left:auto;
+			margin-right:auto;
+			text-align: center;
+			width:70%;
+		}
+		.bordeRedondeado2 {
+			border-radius: 25px;
+			border: 2px solid red;
+			padding: 20px; 
+			margin-left:auto;
+			margin-right:auto;
+			text-align: center;
+			width:70%;
+		}
+		.caja {
+			background: rgba(248,80,50,1);
+		    background: -moz-linear-gradient(-45deg, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 36%, rgba(246,41,12,1) 63%, rgba(240,47,23,1) 87%, rgba(231,56,39,1) 100%);
+		    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(248,80,50,1)), color-stop(36%, rgba(241,111,92,1)), color-stop(63%, rgba(246,41,12,1)), color-stop(87%, rgba(240,47,23,1)), color-stop(100%, rgba(231,56,39,1)));
+		    background: -webkit-linear-gradient(-45deg, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 36%, rgba(246,41,12,1) 63%, rgba(240,47,23,1) 87%, rgba(231,56,39,1) 100%);
+		    background: -o-linear-gradient(-45deg, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 36%, rgba(246,41,12,1) 63%, rgba(240,47,23,1) 87%, rgba(231,56,39,1) 100%);
+		    background: -ms-linear-gradient(-45deg, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 36%, rgba(246,41,12,1) 63%, rgba(240,47,23,1) 87%, rgba(231,56,39,1) 100%);
+			background: linear-gradient(135deg, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 36%, rgba(246,41,12,1) 63%, rgba(240,47,23,1) 87%, rgba(231,56,39,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=1 );
+		    width:70%;
+		    height: 60px;
+		</style>
+	</head>
+	<body>
+		<section>
+		    <h1>Crear una página web personal simulada, que incluya al menos:</h1>
+		</section>
+		<section>
+		    <div class="caja">
+		      <strong class="red">Uso de colores</strong> <strong class="yellow">para texto</strong> y fondo, incluyendo al menos colores degradados en alguna de sus cajas.
+		    </div>
+		    <div class="fuentes">Inclusión de tipografías externas de Google Fonts, Adobe Edge Web Fonts o un servicio similar on line.</div>
+		    <h1>Distintos encabezados...</h1>
+		    <h2>Como este...</h2>
+		    <h3>O este otro...</h3>
+		    <h1>Uso de caracteres especiales</h1>
+		    <p>Caracteres especiales:</p>
+		    <p>El &ntilde;and&uacute; y la cig&uuml;e&ntilde;a.<br />3 &gt; 2, y 2 &lt; 4</p>
+		    <p>Aqu&iacute;no hay 5 espacios [     ]</p>
+		    <p>Aqu&iacute; s&iacute; que hay 5 espacios [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</p>
+		    <h1>Incluir, imágenes de tipo bitmap y vectorial:</h1>
+		    <picture>
+			    <source media="(min-width: 1100px)" srcset="http://media.mnn.com/assets/images/2015/09/01-zen-fox.jpg.653x0_q80_crop-smart.jpg" />
+			  	<source media="(min-width: 600px)" srcset="http://a.abcnews.go.com/images/Lifestyle/ht_pudding_the_fox_03_mt_140821_16x9_992.jpg" />
+			  	<source media="(min-width: 400px)" srcset="https://pbs.twimg.com/profile_images/586468724573474816/BzRPSBJG_400x400.jpg" />
+			  	<img src="http://a.abcnews.go.com/images/Lifestyle/ht_pudding_the_fox_03_mt_140821_16x9_992.jpg" alt="shaum" />
+			</picture>
+			<div id="vector">
+			  <svg>
+			  <defs>
+			    <g id="shape">
+			        <rect x="50" y="50" width="50" height="50" />
+			        <circle cx="50" cy="50" r="50" />
+			    </g>
+			  </defs>
+			  <use xlink:href="#shape" x="50" y="50" />
+			  <use xlink:href="#shape" x="200" y="50" />
+			</svg>
+			</div>
+		  	<h3>Incluir algún vídeo:</h3>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/B7wkzmZ4GBw" frameborder="0" allowfullscreen></iframe><br />
+			<div class="bordeRedondeado">
+			    <div class="bordeRedondeado2">
+			      Incluir bordes redondeados en alguna de sus cajas.
+			    </div>
+			</div>
+			<br /><br />
+			La página debe comenzar con el siguiente encabezamiento:  “Página personal de &lt;nombre y apellido del alumno&gt;”
+			Subir dicha aplicación a la cuenta de Neocities.org o de su elección.
+		</section>
+	</body>
+</html>
